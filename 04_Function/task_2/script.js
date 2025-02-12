@@ -15,10 +15,3 @@ function fahrenheitToCelsius(temp) {
 console.log(celsiusToFahrenheit(25));
 console.log(fahrenheitToCelsius(77));
 
-// Arrow Function
-
-let newCelsiusToFahrenheit = (temp) => temp * 1.8 + 32;
-let newFahrenheitToCelsius = (temp) => (temp - 32) / 1.8;
-
-console.log(newCelsiusToFahrenheit(25));
-console.log(newFahrenheitToCelsius(77));
