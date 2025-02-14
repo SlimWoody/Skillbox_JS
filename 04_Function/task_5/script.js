@@ -18,3 +18,6 @@ console.log(`Сумма со скидкой ${totalSum}`);
 let newTotalSum = (price, amount, discount) => price * amount * (1 - discount / 100);
 console.log(`Сумма со скидкой ${newTotalSum(priceItem, amountItem, discountItem)}`);
 
+
+
+

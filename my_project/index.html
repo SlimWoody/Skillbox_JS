@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Корзина товаров</title>
+        <link rel="stylesheet" href="./style/style.css" />
+    </head>
+    <body>
+        <section class="products">
+            <div
+                class="product-card"
+                data-id="1"
+                data-name="Товар 1"
+                data-price="1500"
+            >
+                <img
+                    src="./img/6979871804.jpg"
+                    alt="Товар 1"
+                    class="product-card__image"
+                />
+                <h3 class="product-card__title">Товар 1</h3>
+                <p class="product-card__price">₽1 500</p>
+                <div class="product-card__controls">
+                    <input
+                        type="number"
+                        class="product-card__quantity"
+                        min="1"
+                        value="1"
+                    />
+                    <button class="product-card__button">
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="product-card"
+                data-id="2"
+                data-name="Товар 2"
+                data-price="2000"
+            >
+                <img
+                    src="./img/adidas-yeezy-451-15887-1.jpg"
+                    alt="Товар 2"
+                    class="product-card__image"
+                />
+                <h3 class="product-card__title">Товар 2</h3>
+                <p class="product-card__price">₽2 000</p>
+                <div class="product-card__controls">
+                    <input
+                        type="number"
+                        class="product-card__quantity"
+                        min="1"
+                        value="1"
+                    />
+                    <button class="product-card__button">
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="product-card"
+                data-id="3"
+                data-name="Товар 3"
+                data-price="2500"
+            >
+                <img
+                    src="./img/nike-air-zoom-spiridon-cage-2-19977-1.jpg"
+                    alt="Товар 3"
+                    class="product-card__image"
+                />
+                <h3 class="product-card__title">Товар 3</h3>
+                <p class="product-card__price">₽2 500</p>
+                <div class="product-card__controls">
+                    <input
+                        type="number"
+                        class="product-card__quantity"
+                        min="1"
+                        value="1"
+                    />
+                    <button class="product-card__button">
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2 class="cart__title">Корзина</h2>
+            <ul class="cart__list"></ul>
+
+            <div class="cart__discount">
+                <input
+                    type="text"
+                    class="cart__promo"
+                    placeholder="Введите промокод"
+                />
+                <button class="cart__apply">Применить</button>
+            </div>
+
+            <div class="cart__total">
+                <span>Итого:</span>
+                <span class="cart__sum">₽0</span>
+            </div>
+        </section>
+        <script src="./script.js"></script>
+    </body>
+</html>
