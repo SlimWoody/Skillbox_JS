@@ -5,7 +5,6 @@ const cart = {}; // Объект для хранения товаров
                 .forEach((button) => {
                     button.addEventListener('click', (event) => {
                         const card = event.target.closest('.product-card');
-                        console.log(card );
                         const id = card.dataset.id;
                         const name = card.dataset.name;
                         const price = Number(card.dataset.price);
