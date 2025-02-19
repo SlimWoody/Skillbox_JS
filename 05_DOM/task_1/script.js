@@ -1,21 +1,25 @@
-// Находим нужный элемент на странице 
-const buttonAddCartEl  = document.querySelectorAll('.catalog__button-add-cart');
+const buttonsAddCartEls = document.querySelectorAll(
+    '.catalog__button-add-cart'
+);
 const cartListEl = document.querySelector('.cart__list');
 
-//Создаем элемент
-const cartItem = document.createElement('li');
+function createElementAndAppendCart(productName) {
+    const cartItem = document.createElement('li');
+    const spanEl = document.createElement('span');
 
-// Присываиваем класс 
-cartListItem.classList.add = 'cart__item';
+    cartItem.classList.add = 'cart__item';
 
+    spanEl.textContent = productName;
 
+    cartItem.append(spanEl);
+    cartListEl.append(cartItem);
+}
 
-
-buttonAddCartEl.forEach(button => {
+buttonsAddCartEls.forEach((button) => {
     button.addEventListener('click', function (e) {
         const cart = button.previousElementSibling;
         const productName = cart.dataset.name;
-        
 
+        createElementAndAppendCart(productName);
     });
 });
