@@ -8,7 +8,7 @@ function addToCart(productName) {
     // Создаем элемент li
     const cartItem = document.createElement('li');
     // Добавляем класс cart__item
-    cartEl.classList.add('cart__item');
+    cartItem.classList.add('cart__item');
 
     // Добавляем тест с именем товара
     cartItem.append(document.createTextNode(productName));
