@@ -5,7 +5,7 @@ const buttonsAddCartEls = document.querySelectorAll(
 const cartListEl = document.querySelector('.cart__list');
 
 // Функция создания и добавления элемента в корзину
-function createElementAndAppendCart(productName) {
+const createElementAndAppendCart = (productName) => {
     const cartItem = document.createElement('li');
     const spanEl = document.createElement('span');
 

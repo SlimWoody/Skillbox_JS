@@ -1,31 +1,12 @@
-const userName = 'Павел';
+const comentArr = ['Хороший товар', 'Пойдет для новичка', 'Так себе', 'Лучшее решение'];
 
 const contentEl = document.querySelector('.content');
-console.log(contentEl);
 
-const h1TitleContent = document.createElement('h1');
-
-h1TitleContent.classList.add('content__title');
-h1TitleContent.textContent = `Добро пожаловать ${userName}`;
-
-contentEl.append(h1TitleContent);
-
-h1TitleContent.classList.remove('content__title');
-
-
-getAccess();
-
-function getUserAge() {
-    return +prompt(`Сколько Вам лет ${userName}`);
-}
-
-
-function getAccess(callback) {
-    const userAge = getUserAge();
-
-    if (userAge < 18) {
-        alert('В доступе отказнно')
-    } else {
-        alert('Заходи')
-    }
+for (let i = 0; i < comentArr.length; i++) {
+    const h3El = document.createElement('h3');
+    h3El.textContent = `Комментарий №${i + 1}`;
+    const productNameEl = document.createElement('p');
+    productNameEl.textContent = comentArr[i];
+    contentEl.append(h3El);
+    contentEl.append(productNameEl);
 }
